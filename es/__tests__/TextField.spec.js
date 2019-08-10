@@ -35,7 +35,9 @@ describe('TextField', function () {
         name: 'myText',
         value: 'Foo'
       }
-    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo' }));
+    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', ref: function ref(el) {
+        return undefined.component = el;
+      } }));
   });
 
   it('renders a TextField with no error when not touched', function () {
@@ -47,7 +49,9 @@ describe('TextField', function () {
       meta: {
         error: 'FooError'
       }
-    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo' }));
+    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', ref: function ref(el) {
+        return undefined.component = el;
+      } }));
   });
 
   it('renders a TextField with an error', function () {
@@ -60,7 +64,9 @@ describe('TextField', function () {
         error: 'FooError',
         touched: true
       }
-    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', error: true, helperText: 'FooError' }));
+    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', error: true, helperText: 'FooError', ref: function ref(el) {
+        return undefined.component = el;
+      } }));
   });
 
   it('renders a TextField with no warning when not touched', function () {
@@ -72,7 +78,9 @@ describe('TextField', function () {
       meta: {
         warning: 'FooWarning'
       }
-    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo' }));
+    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', ref: function ref(el) {
+        return undefined.component = el;
+      } }));
   });
 
   it('renders a TextField with an warning', function () {
@@ -85,7 +93,9 @@ describe('TextField', function () {
         warning: 'FooWarning',
         touched: true
       }
-    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', error: true, helperText: 'FooWarning' }));
+    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: 'Foo', error: true, helperText: 'FooWarning', ref: function ref(el) {
+        return undefined.component = el;
+      } }));
   });
 
   it('should ignore defaultValue', function () {
@@ -99,6 +109,8 @@ describe('TextField', function () {
         warning: 'FooWarning',
         touched: true
       }
-    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: '', error: true, helperText: 'FooWarning' }));
+    }).render()).toEqualJSX(_react2.default.createElement(_TextField2.default, { name: 'myText', value: '', error: true, helperText: 'FooWarning', ref: function ref(el) {
+        return undefined.component = el;
+      } }));
   });
 });
